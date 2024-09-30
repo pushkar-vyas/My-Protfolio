@@ -1,0 +1,130 @@
+
+.skills_container{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.875rem;
+    
+
+}
+
+
+.skills_card{
+    
+    /* position: relative; */
+    /* overflow: hidden; */
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.skills_card:hover{
+    cursor: pointer;
+    position: relative;
+    box-shadow: 2px;
+    
+}
+
+
+.skills_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+
+}
+
+
+
+ /* .skills_d{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    
+ } */
+
+ .work_mask{
+    background: #6c6ce5;
+    position: absolute;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: .3s;
+    opacity: 0;
+}
+
+.skills_card:hover .work_mask{
+    opacity: 0.9;
+}
+
+.skills_name{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 35%;
+    color: #fff;
+    font-size: var(--h3-font-size);
+    /* margin: 0 0 0.98rem; */
+    /* padding: 0.1.25rem; */
+    /* top:3.75rem; */
+    transform: translateY(30px);
+    transition: .3s;
+    opacity: 0;
+    text-align: center;
+    /* padding-bottom: 50px; */
+    /* margin-bottom: 10px; */
+    /* height: 40px; */
+    /* width: 40px; */
+}
+.skills_name:hover{
+    /* display:flex; */
+}
+
+.skills_level{
+    color: #fff;
+    position: absolute;
+    bottom: 0rem;
+    left: 25%;
+    font-size: var(--h3-font-size);
+    display: block;
+    /* background-color: #ffd15c; */
+    /* height: 40px; */
+    /* width: 40px; */
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    /* line-height: 42px; */
+    transition: .3s;
+    opacity: 0;
+}
+
+.skills_card:hover .skills_level{
+    opacity: 1;
+}
+
+.skills_card:hover .skills_name
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .skills_container{
+    grid-template-columns: repeat(2, 330px);
+    justify-content: center;
+    row-gap: 1.875rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills_container{
+        grid-template-columns: 310px;
+       
+    }
+
+    
+}

@@ -1,0 +1,128 @@
+.resume_container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.875rem;
+    background-color: var(--container-color);
+    border-radius: var(--border-radius);
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+.timeline{
+    /* background-color: var(--container-color); */
+    padding: 1.875rem ;
+    /* padding-left: 0; */
+    /* border-radius: var(--border-radius); */
+    /* position: relative; */
+    /* box-shadow: var(--shadow); */
+}
+
+.im{
+    margin:2rem;
+    width: 80%;
+    /* height: 40%; */
+}
+.timeline_item{
+    position: relative;
+    padding-left: 3.125rem;
+    /* padding-bottom: 3.125rem; */
+    border-radius: var(--border-radius);
+    
+    position: relative;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.timline_de{
+    display: flex;
+}
+
+.i{
+    margin-top: 12px;
+    margin-left: 8px;
+    color: var(--first-color);
+    background-color: var(--container-color);
+    cursor: pointer;
+}
+
+
+.timeline_item:last-child{
+    /* padding-bottom: 0; */
+}
+
+.timeline_item::before{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    position: absolute;
+    left: -3.25rem;
+    top: 0;
+}
+
+.timeline .icon-briefcase,
+.timeline .icon-graduation {
+    position: absolute;
+    left: -4rem;
+    top: 0;
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    background-color: var(--container-color);
+    padding: 0.4375rem 0;
+}
+
+.timeline_date{
+    counter-reset: #8b88b1;
+    font-size: var(--small-font-size);
+}
+
+.timeline_title{
+    font-size: var(--h3-font-size);
+
+    text-align: center;
+    
+    margin: 0.5rem 0;
+}
+.timeline_text{
+    font-size: small;
+}
+
+@media screen and (max-width: 1024px) {
+    .resume_container{
+    grid-template-columns: 450px;
+    justify-content: center;
+    row-gap: 1.875rem;
+    }
+
+    .timeline_item::before{
+        left: 3px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .resume_container{
+        grid-template-columns: 1fr
+       
+    }
+}
+
+@media screen and (max-width:350px) {
+    .timeline_item{
+        padding-left: 1.875rem;
+        padding-bottom: 1.875rem;
+    }
+    
+    .timeline_item::before{
+        left: 0;
+    }
+
+    .timeline .icon-briefcas,
+    .timeline .icon-graduation{
+        left: -9px;
+    }
+
+    .timeline_text{
+        text-align: justify;
+    }
+}
+
+
