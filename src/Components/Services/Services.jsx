@@ -22,7 +22,7 @@ const data = [
   {
     id: 3,
     image: Image3,
-    title: "Social media",
+    title: "Responsive Web Design",
     description:
       "Fresher with hands-on project experience, dedicated to delivering quality work.",
   },

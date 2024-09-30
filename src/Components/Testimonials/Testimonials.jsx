@@ -29,16 +29,32 @@ const data = [
     comment:
       "I enjoy working with the theme and learn so much. You make the process fun and interesting. Good luck! 👍",
   },
+  {
+    id: 3,
+    image: Image1,
+    title: "Piyush Carpenter",
+    subtitle: "(Friend)",
+    comment:
+      "I enjoy working with the theme and learn so much. You make the process fun and interesting. Good luck! 👍",
+  },
+  {
+    id: 4,
+    image: Image3,
+    title: "Rohit kushwaha",
+    subtitle: "(Friend)",
+    comment:
+      "I enjoy working with the theme and learn so much. You make the process fun and interesting. Good luck! 👍",
+  },
 ];
 const Testimonials = () => {
   return (
-    <section className="testimonials container section">
+    <section className="testimonials container section "id="reviews">
       <h2 className="section_title">Clients & Reviews</h2>
 
        <Swiper className="testimonials_container grid"
         modules={[Pagination]}
         spaceBetween={30}
-        slidesPerView={1}
+        slidesPerView={2}
         loop={true}
         grabCursor={true}
         pagination={{ clickable: true }}

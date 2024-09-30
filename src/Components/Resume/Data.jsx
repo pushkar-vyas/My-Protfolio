@@ -3,7 +3,7 @@ const Data = [
       id: 1,
       category: "education",
       icon: "icon-graduation",
-      year: "2024 - present",
+      year: "2022-2024",
       title: "Post Graduation",
       desc: "Master of Computer Applications (MCA). Passed from MITM Ujjain with 7.36 CGPA.",
     },

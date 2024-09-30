@@ -33,14 +33,14 @@ const AboutBox = () => {
             </div>
         </div>
 
-        <div className="about_box">
+        {/* <div className="about_box">
             <i className="about_icon icon-badge"></i>
 
             <div>
                 <h3 className="about_tittle">35</h3>
                 <span className="about_subtitle">nominees winners</span>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }

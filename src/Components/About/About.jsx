@@ -15,13 +15,13 @@ const About = () => {
         <div className="about_data grid">
           <div className="about_info">
             <p className="about_description">I am a frontend developer who creates clean, responsive, and user-friendly websites. Check out my projects to see how I turn ideas into engaging web experiences.</p>
-            <a download='' href={Resume} className="btn">Download CV</a>
+            <a download='' href={Resume} className="btn cv">Download CV</a>
           </div>
 
-          <div className="about_skills grid">
+          {/* <div className="about_skills grid">
             <div className="skills_data">
               <div className="skills_titles">
-                <h3 className="skills_name">Development</h3>
+                <h3 className="skills_name">Development </h3>
                 <span className="skills_number ">90%</span>
                 </div>
                 
@@ -51,7 +51,7 @@ const About = () => {
                 <span className="skills_percentage photography"></span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

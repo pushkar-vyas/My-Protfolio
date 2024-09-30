@@ -8,9 +8,9 @@
     background-color: var(--container_color);
     box-shadow: var(--shadow);
     border-radius: var(--border-radius);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat( 1fr);
     column-gap: 1.875rem;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
 }
 
@@ -29,8 +29,12 @@
 
 .about_description{
     margin-bottom: 1rem;
-    text-align: justify;
+    text-align: center;
 
+}
+
+.cv{
+margin-left: 38%;
 }
 
 .about_skills{
@@ -44,8 +48,8 @@
 }
 
 .skills_name{
-    /* font-size: var(--normal-font-size); */
-    /* font-weight: var(--font-medium); */
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
 }
 
 .skills_number{
@@ -83,19 +87,30 @@
 }
 
 .about_boxes{
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 1.875rem;
     margin-top: 4.35rem;
+    /* padding-left: 27%; */
+    
+
 }
 
 .about_box{
     display: flex;
     column-gap: 1.5rem;
+    background-color: var(--container_color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+
 }
 
 .about_icon{
     font-size: var(--h1-font-size);
     color: #dedeea;
+    margin-left: 20%;
+    margin-top: 2%;
+    
+    /* align-items: center; */
 }
 
 .about_title{
@@ -121,10 +136,21 @@
     justify-self: center;
 }
 
+.cv{
+    margin-left: 37%;
+    }
+
 .about_box{
     flex-direction: column;
     row-gap: .5rem;
     text-align: center;
+}
+.about_icon{
+    
+    margin-left: 0;
+    
+    
+    /* align-items: center; */
 }
 }
 
@@ -148,6 +174,9 @@
         row-gap: 1.5rem;
         justify-content: center;
     }
+    .cv{
+        margin-left: 25%;
+        }
 }
 
 @media screen and (max-width:576px) {
@@ -158,5 +187,8 @@
     .about_boxes{
         grid-template-columns: 1fr;
     }
+    .cv{
+        margin-left: 25%;
+        }
     
 }

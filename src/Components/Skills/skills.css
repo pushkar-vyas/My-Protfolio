@@ -65,6 +65,7 @@
     position: absolute;
     bottom: 1.5rem;
     left: 35%;
+    right: 35%;
     color: #fff;
     font-size: var(--h3-font-size);
     /* margin: 0 0 0.98rem; */
@@ -87,7 +88,8 @@
     color: #fff;
     position: absolute;
     bottom: 0rem;
-    left: 25%;
+    left: 26%;
+    right: 25%;
     font-size: var(--h3-font-size);
     display: block;
     /* background-color: #ffd15c; */

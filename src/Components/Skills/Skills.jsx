@@ -11,7 +11,7 @@ const skills = [
   { icon: <SiBootstrap color="#7952b3" size={50} />, name: 'Bootstrap', level: 'Beginner' },
   { icon: <SiTailwindcss color="#38B2AC" size={50} />, name: 'Tailwind CSS', level: 'Intermediate' },
   
-  { icon: <SiMongodb color="#47A248" size={50} />, name: 'MongoDB', level: 'Beginner' },
+  { icon: <SiMongodb color="#47A248" size={50} />, name: 'MongoDB', level: 'Beginner ' },
   
   { icon: <SiC color="#00549D" size={50} />, name: 'C', level: 'Intermediate' },
 ];

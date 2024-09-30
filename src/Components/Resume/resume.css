@@ -23,13 +23,15 @@
 }
 .timeline_item{
     position: relative;
+    margin: 2%;
     padding-left: 3.125rem;
     /* padding-bottom: 3.125rem; */
     border-radius: var(--border-radius);
     
     position: relative;
     box-shadow: var(--shadow);
-    text-align: center;
+    /* text-align: center; */
+    
 }
 
 .timline_de{
@@ -42,6 +44,16 @@
     color: var(--first-color);
     background-color: var(--container-color);
     cursor: pointer;
+}
+
+.ii{
+    margin-top: 12px;
+    margin-left: 5px;
+    
+    color: var(--first-color);
+    background-color: var(--container-color);
+    cursor: pointer;
+    transform: rotate(90deg);
 }
 
 
@@ -73,6 +85,7 @@
 .timeline_date{
     counter-reset: #8b88b1;
     font-size: var(--small-font-size);
+    /* margin-right: 20%; */
 }
 
 .timeline_title{
@@ -81,9 +94,14 @@
     text-align: center;
     
     margin: 0.5rem 0;
+    margin-left: 20%;
 }
 .timeline_text{
     font-size: small;
+    text-align: center;
+    padding: 2% 10%;
+    padding-top: 0;
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -96,6 +114,12 @@
     .timeline_item::before{
         left: 3px;
     }
+
+    .timeline .icon-briefcase,
+.timeline .icon-graduation {
+    position: absolute;
+    left: -0.5rem;
+}
 }
 
 @media screen and (max-width: 576px) {
@@ -103,6 +127,11 @@
         grid-template-columns: 1fr
        
     }
+    .timeline .icon-briefcase,
+.timeline .icon-graduation {
+    
+    left: -0.5rem;
+}
 }
 
 @media screen and (max-width:350px) {
@@ -115,10 +144,13 @@
         left: 0;
     }
 
-    .timeline .icon-briefcas,
-    .timeline .icon-graduation{
-        left: -9px;
+    .timeline .icon-briefcase,
+    .timeline .icon-graduation {
+    
+    left: 10rem;
     }
+
+    
 
     .timeline_text{
         text-align: justify;

@@ -15,7 +15,7 @@ const Card = (props,index) => {
         <span className="timeline_date">{props.year}</span>
               <div className='timline_de'>
                 <h3 className="timeline_title">{props.title}</h3>
-                <RxDoubleArrowRight  className="i"onClick={() => toggleAccordion(index)}/>
+                <RxDoubleArrowRight  className={activeIndex === index ? "ii" : "i" }onClick={() => toggleAccordion(index)}/>
           </div>
                 {activeIndex === index && (
                 <p className="timeline_text">{props.desc}</p>

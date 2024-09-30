@@ -1,11 +1,17 @@
 .testimonials_container{
     max-width: 700px;
     margin: auto;
+    
 }
 
 .testimonial_item{
     text-align: center;
     padding: 0 1.25rem 1.25rem;
+    padding-bottom: 0;
+    /* border:2px solid red; */
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    margin-bottom: 5px;
 }
 
 .thumb{
@@ -30,7 +36,7 @@
     margin-top: 1.5rem;
     box-shadow: var(--shadow);
     border-radius: var(--border-radius);
-    position: relative;
+    /* position: relative; */
     margin-bottom: 3rem;
 }
 
