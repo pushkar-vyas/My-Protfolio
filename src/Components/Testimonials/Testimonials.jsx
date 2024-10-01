@@ -52,12 +52,22 @@ const Testimonials = () => {
       <h2 className="section_title">Clients & Reviews</h2>
 
        <Swiper className="testimonials_container grid"
-        modules={[Pagination]}
-        spaceBetween={30}
-        slidesPerView={2}
-        loop={true}
-        grabCursor={true}
-        pagination={{ clickable: true }}
+         modules={[Pagination]}
+         spaceBetween={30}
+         loop={true}
+         grabCursor={true}
+         pagination={{ clickable: true }}
+         breakpoints={{
+          
+           // when the window width is >= 768px (md)
+           768: {
+             slidesPerView: 2,
+           },
+           // when the window width is >= 320px (sm)
+           320: {
+             slidesPerView: 1,
+           },
+         }}
       >
         {
           data.map(({id, image, title, subtitle, comment})=>{

@@ -1,5 +1,9 @@
 import React from 'react'
 import './contect.css'
+import { MdOutlineAttachEmail } from "react-icons/md";
+import { IoLocation } from "react-icons/io5";
+import { BsFillTelephonePlusFill } from "react-icons/bs";
+
 
 const Contect = () => {
   const onSubmit = async (event) => {
@@ -33,6 +37,22 @@ const Contect = () => {
         <div className="contact_info">
           <h3 className="contect_title">Let's talk about everything</h3>
           <p className="contact_details">Don't like forms? Send me an email.</p>
+          <div className="contect-details">
+                        <div className="contect-detail">
+                        <MdOutlineAttachEmail className='ci'/> <p>pushkarvyas204@gmail.com</p>
+
+                        </div>
+                        <div className="contect-detail">
+                        <BsFillTelephonePlusFill className='ci'/><p>6264287351</p>
+
+                        </div>
+                        <div className="contect-detail">
+                        <IoLocation className='ci'/><p>Dewas, M.P.</p>
+
+                        </div>
+                        
+
+                    </div>
         </div>
 
         <form action='' onSubmit={onSubmit}  className='contact_form'>

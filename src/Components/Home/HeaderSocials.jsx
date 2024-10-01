@@ -5,6 +5,7 @@ import { FaBehance } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineAttachEmail } from "react-icons/md";
+import { IoIosContact } from "react-icons/io";
 
 const HeaderSocials = () => {
   return (
@@ -25,9 +26,9 @@ const HeaderSocials = () => {
         <a href="" className="home_socials-link" target='blank' >
         <FaTwitter />
         </a>
-
-        <a href="https://www.instagram.com/" className="home_socials-link" target='blank' >
-        <FaInstagram />
+        
+        <a href="#contect" className="home_socials-link" target='blank' >
+        <IoIosContact />
         </a>
 
         

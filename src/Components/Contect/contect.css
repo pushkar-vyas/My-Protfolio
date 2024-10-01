@@ -49,6 +49,24 @@
     resize: none;
 }
 
+.contect-detail{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.contect-detail p{
+    padding-left: 1rem;
+    cursor: pointer;
+    animation:alternate-reverse;
+    /* padding-bottom: 1rem; */
+}
+
+.ci{
+    margin-top: 0.35rem;
+}
+
+
+
 @media screen and (max-width: 1024px) {
     .contact_container{
     grid-template-columns: 300px 360px;

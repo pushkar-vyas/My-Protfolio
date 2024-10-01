@@ -160,8 +160,8 @@ img{
 }
 
 .btn:hover{
-  transform: scale(1);
+  /* transform: scale(1); */
   
 
-  animation:button-puch 0.3s linear 1;
+  animation: button-puch 0.3s linear 1;
 }

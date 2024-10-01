@@ -5,6 +5,7 @@
 }
 
 .testimonial_item{
+    
     text-align: center;
     padding: 0 1.25rem 1.25rem;
     padding-bottom: 0;
@@ -12,6 +13,7 @@
     box-shadow: var(--shadow);
     border-radius: var(--border-radius);
     margin-bottom: 5px;
+    
 }
 
 .thumb{
