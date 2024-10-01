@@ -52,6 +52,7 @@
 .contect-detail{
     display: flex;
     margin-top: 2rem;
+    align-items: center;
 }
 
 .contect-detail p{
@@ -87,6 +88,9 @@
 
     .contact_info{
         text-align: center;
+    }
+    .contect-detail{
+        padding-left: 1.1rem;
     }
 }
 

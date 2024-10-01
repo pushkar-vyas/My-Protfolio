@@ -132,6 +132,25 @@
     
     left: -0.5rem;
 }
+.timeline_title{
+    
+
+    text-align: start;
+    
+    margin: 0.5rem 0;
+    margin-bottom: 1rem;
+
+}
+
+.timeline_text{
+    
+    text-align: center;
+    padding: 2% 0%;
+    padding-right: 2rem;
+    padding-top: 0;
+
+}
+
 }
 
 @media screen and (max-width:350px) {
@@ -149,6 +168,8 @@
     
     left: 10rem;
     }
+    
+    
 
     
 
