@@ -10,21 +10,21 @@ const data = [
     image: Image1,
     title: "UI/UX design",
     description:
-      "Fresher with hands-on project experience, dedicated to delivering quality work.",
+      "Building clean and efficient user interfaces .",
   },
   {
     id: 2,
     image: Image2,
     title: "Web Development",
     description:
-      "Fresher with hands-on project experience, dedicated to delivering quality work.",
+      "Design user-friendly, visually appealing web interfaces.",
   },
   {
     id: 3,
     image: Image3,
     title: "Responsive Web Design",
     description:
-      "Fresher with hands-on project experience, dedicated to delivering quality work.",
+      "Develop responsive websites with modern technologies.",
   },
 ];
 

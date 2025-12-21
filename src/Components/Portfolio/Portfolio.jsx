@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './portfolio.css'
 import Menu from './Menu'
+import { FaGithub } from "react-icons/fa";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const Portfolio = () => {
   const[items ,setItems]= useState(Menu)
@@ -20,9 +22,10 @@ const Portfolio = () => {
 
       <div className="work_filters">
         <span className="work_item" onClick={()=>setItems(Menu)}>Everything</span>
-        <span className="work_item" onClick={()=> filterItem("Branding")}>Frontend</span>
-        <span className="work_item" onClick={()=> filterItem("Creative")}>Creative</span>
-        <span className="work_item" onClick={()=> filterItem("Art")}>Art</span>
+        <span className="work_item" onClick={()=> filterItem("Frontend")}>Frontend</span>
+        <span className="work_item" onClick={()=> filterItem("Mern")}>Mern</span>
+        {/* <span className="work_item" onClick={()=> filterItem("Creative")}>Creative</span> */}
+        {/* <span className="work_item" onClick={()=> filterItem("Art")}>Art</span> */}
         <span className="work_item" onClick={()=> filterItem("Design")}>Design</span>
         
       </div>
@@ -30,7 +33,7 @@ const Portfolio = () => {
       <div className="work_container grid">
         {
           items.map((elem)=>{
-            const{id ,image, title, category} = elem;
+            const{id ,image, title, category,about,demo,github} = elem;
             return(
               <div className="work_card" kry={id}>
                 <div className="work_thumbnail">
@@ -39,9 +42,13 @@ const Portfolio = () => {
                 </div>
 
                 <span className="work_category">{category}</span>
+                <span className="work_about">{about}</span>
                 <h3 className="work_title">{title}</h3>
-                <a href="#" className="work_button">
-                  <i className="icon-link work_button-icon"></i>
+                <a href={github} className="work_button">
+                  <FaGithub className="icon-link work_button-icon"/>
+                </a>
+                <a href={demo} className="work_button2">
+                <FaArrowUpRightFromSquare className="icon-link work_button-icon"/>
                 </a>
 
               </div>

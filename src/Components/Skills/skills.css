@@ -1,5 +1,6 @@
 
 .skills_container{
+    
     grid-template-columns: repeat(4, 1fr);
     gap: 1.875rem;
     
@@ -8,7 +9,7 @@
 
 
 .skills_card{
-    
+   
     /* position: relative; */
     /* overflow: hidden; */
     border-radius: var(--border-radius);
