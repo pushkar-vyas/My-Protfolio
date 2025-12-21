@@ -14,7 +14,7 @@ const About = () => {
 
         <div className="about_data grid">
           <div className="about_info">
-            <p className="about_description">I am a frontend developer who creates clean, responsive, and user-friendly websites. Check out my projects to see how I turn ideas into engaging web experiences.</p>
+            <p className="about_description">I am a mern stack developer who creates clean, responsive, and user-friendly websites. Check out my projects to see how I turn ideas into engaging web experiences.</p>
             <a download='' href={Resume} className="btn cv">Download CV</a>
           </div>
 

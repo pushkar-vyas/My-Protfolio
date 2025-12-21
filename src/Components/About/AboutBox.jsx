@@ -18,7 +18,7 @@ const AboutBox = () => {
             <i className="about_icon icon-fire"></i>
 
             <div>
-                <h3 className="about_tittle">20+</h3>
+                <h3 className="about_tittle">10+</h3>
                 <span className="about_subtitle">Project completed</span>
             </div>
         </div>
